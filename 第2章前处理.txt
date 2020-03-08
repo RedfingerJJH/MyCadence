@@ -1,0 +1,84 @@
+15、如何打开Allegro并新建Brd
+High-Speed
+Symphony Team Design（联网）
+PCB Team Design（不联网）
+Allegro Productivity Toolbox
+Full GRE
+
+16、如设置封装库路径
+Setup -> User Preferences 
+Paths + Library
+勾选Expand，只保留.与..，然后增加自己的库路径
+把鼠标停在按钮上会显示库路径
+
+17、如何修改设计区域尺寸
+Setup -> Design Parameters，Design页面
+User unit：Mils
+Accuracy：4
+Long name size：255
+
+18、如何修改设计单位
+Setup -> Design Parameters，Design页面
+User unit：Mils或Millimeter，转换不要超过1次
+Enterprise也可以在状态栏打开设置窗体
+
+19、如何手工绘制板框
+Add -> Line
+Board Geometry + Outline，Line width：6
+x 0 0, ix 4000或x 4000 , iy 2000, ix -4000, iy -2000或x 0 0
+
+20、如何修改板框线线宽
+Edit -> Change
+find: 勾选Lines或Other segs（带C是电气线）
+options：勾选Line width，输入线宽值，然后回车
+
+21、如何倒圆角
+Manufacture -> Drafting -> Fillet
+Radius非0倒圆角，0恢复直角
+
+22、如何导入结构图
+File -> Import -> DXF
+先选择文件，再设置单位MM，勾选Incremental addition，点击Edit/View layers按钮
+先Select all，class选择DOARD GEOMETRY，点击New subclass创建Subclass（dxf-date），
+然后点击Map按钮
+
+23、如何显示和更改坐标原点
+先查出最左边直线的x坐标并锁定，最下边直线的y坐标锁定，
+Setup -> Design Parameters，Design页面，x与y分别输入上面的值，
+Display页面，勾选Design origin显示原点
+也可以先把左下角倒成直角，Setup -> Change Drawing Origin，
+待鼠标移近直角顶点时，点击右键，选择Snap pick to -> Segment Vertex
+
+24、如何由结构图生成板框
+Shape -> COmpose Shape
+Optins: Board Geometry + Outline
+Find: Other segs + lines
+在设计区域，右键Temp Group，选择需要的线段（按住ctrl点击取消选择），
+然后右键Complete，再右键Done
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

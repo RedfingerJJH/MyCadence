@@ -1,0 +1,120 @@
+143、如何修复文件数据
+Tools -> Database check
+勾选前2项
+
+144、如何检查设计状态
+Display -> Status
+点击前面颜色小方框可以打开相应报表,然后双击定位
+不再显示DRC：Display -> Waive DRCs -> Waive
+
+145、如何检查多余线段
+Tools -> Quick Reports -> Dangling lines,Via and Antenna Report
+双击定位
+
+146、如何检查单点网络
+Tools -> Quick Reports -> Net single Pin and No Pin
+双击定位
+
+147、如何统计总Pin数、器件个数、布局完成率、布线密度
+Tools -> Quick Reports -> Summary Drawing Report
+
+148、如何检查电气层残铜率
+Tools -> Quick Reports -> Film Area Report
+先要设置好光绘文件，对称层误差不能太大
+
+149、如何重排器件编号
+Logic -> Auto Rename Refdes -> Rename
+Rename前要设置参数Setup
+
+150、如何反标原理图
+Tools -> Back Annotate
+
+151、如何修改字号大小
+Setup -> Design Parameters -> Text -> Setup text size
+
+152、如何修改器件位号大小
+Edit -> Change -> 勾选Text block（选值后记得回车）
+
+153、如何调整丝印文字
+Edit -> Move
+find只勾选Text，options：Incremental + 90 + Sym Origin 勾选Dynamic Alignment
+大十字光标，顶层字母在左或下
+
+154、如何添加文字
+Add -> Text
+Board Geometry + Silkscreen_Top
+可以直接输入，也可以从文件导入
+
+155、如何添加丝印指示标记
+Add -> Line
+Board Geometry + Silkscreen_Top
+从箭头指示，或用字母指示
+
+156、如何添加LOGO
+Place -> Manually
+
+157、如何快速调整器件位号和生成装配图
+Manufacture -> Label Tune
+注意Limit layers，丝印还是装配
+
+158、如何标注尺寸
+Manufacture -> Dimension Environment
+
+159、如何优化孔符图
+Manufacture -> NC -> Drill Customization
+先生成，再合并相同的孔
+
+160、如何提取孔符图
+Manufacture -> NC -> Drill Legend
+
+161、如何调整孔符图位置
+Edit -> Move
+find：Groups
+
+162、如何提取叠层示意图和表格
+Manufacture -> Cross Section Chart
+可以在Table notes输入阻抗要求
+
+163、如何设计Gerber层
+Manufacture -> Artwork
+先设置参数，光绘层可导入导出
+
+164、如何输出Gerber
+Manufacture -> Artwork
+输出前做好一切检查，输出后仔细看log
+
+165、如何输出指定区域的Gerber
+Setup -> Areas -> Photoplot Outline
+Manufacturing + Photoplot_Outline
+
+166、如何设置钻孔参数
+Manufacture -> NC -> NC Parameters
+5.5，勾选4项中的1、4项
+
+167、如何输出钻孔文件
+Manufacture -> NC -> NC Drill
+勾选4项中的1、3项
+
+168、如何输出铣刀文件
+Manufacture -> NC -> NC Route
+非圆形孔
+
+169、如何输出零件文件
+a、File -> Export -> Placement (默认参数)
+b、Tools -> Quick Reports -> Component Report
+
+170、如何打印PDF装配图
+File -> Export -> PDF
+勾选Filed pads（怎么镜像？）
+
+171、如何输出IPC网表
+File -> Export -> IPC 356
+IPC-D-356A，勾选Ignore backdrill 
+
+172、如何输出结构图
+File -> Export -> DXF
+先设置好图层
+revision 12 + MM
+Edit：Select all，勾选不需要的，选择2个选项，Map
+
+173、如何输出ODB++文件
