@@ -56,29 +56,54 @@ Find: Other segs + lines
 在设计区域，右键Temp Group，选择需要的线段（按住ctrl点击取消选择），
 然后右键Complete，再右键Done
 
+25、如何绘制允许布局布线区域
+Edit -> Z-Copy
+Find: Shapes
+布线区域Option: ROUTE KEEPIN + ALL, 点选Contract，在Offset输入40，点选Outline
+布局区域Option: PACKAGE KEEPIN + ALL, 点选Contract，在Offset输入200，点选Outline
 
+26、如何设置区域允许器件高度
+Setup -> Areas -> Package Keepout
+OPtions: Package Keepout + All/Top/Bottom
+绘制Package Keepout区域，右键Done
+Setup -> Areas -> Package Height
+Find: Shapes
+OPtions: Package Keepout + All/Top/Bottom
+点选Package Keepout，在Max height输入值，右键Done
 
+27、如何导入第一方网表
+File -> Import -> Logic
+查看viewlog：File -> Viewlog
 
+28、如何快速放置后台器件
+Place -> Quickplace
+查看viewlog：File -> Viewlog
 
+29、如何使用ROOM方式放置后台器件
+选中器件，右键Edit Properties，点击New Property按钮，输入name与value，输出网表
+（器件要在后台）
+Setup -> Outlines -> Room Outline
+Place -> Quickplace, Place by room
 
+30、如何进行原理图与PCB交互布局
+Options -> Preferences -> Miscellaneous, 勾选Enable intertool Community
+输出网络表，导入网络表！！！
+比如在PCB执行move命令，Find：Symbols
+在原理图中选择器件，
+鼠标移回PCB中，任意空地点击，就抓起了原理图中选择的器件
+在PCB中找原理图中的器件，只能通过高亮
 
+31、如何按需要显示或隐藏飞线
+Display -> Show Rats -> All/Components/Net
+Display -> Blank Rats -> All/Components/Net
 
+32、如何设置层面颜色和打开所需层面
+Display -> Color/Visibility
+Geometry + Pin Number
+Visibility Pane
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+33、如何设置各种格点
+Setup -> Grids
+布局一般设置25
+大小格点：5 5 5 5
+可以输入： =31.5/2（BGA）
