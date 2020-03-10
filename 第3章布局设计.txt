@@ -1,0 +1,25 @@
+34、如何移动、旋转、镜像器件
+Edit -> MOve
+Find: Symbols
+Options: User Pick(整体旋转)
+旋转时绕圈要大一点
+
+35、如何镜像多个器件
+Edit -> Mirror
+Find: Symbols，选中器件，点击提取，点击镜像
+
+36、如何快速对齐多个器件
+Setup -> Application Mode -> Placement Edit
+选择多个器件，在某个参考器件上右键Align components，设置好参数，右键Done
+
+37、如何复制与交换器件
+
+38、如何用极坐标实现器件圆形摆放
+以选中器件与点击点之间距离为半径
+
+39、如何快速选择多个器件
+右键：Temp Group/Select ***
+
+40、如何定义与运用Group
+打散：Find：Groups，选中Group，右键Disband group
+
